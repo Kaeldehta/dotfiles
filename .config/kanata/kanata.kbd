@@ -19,13 +19,19 @@
   esc (tap-hold-release 200 200 esc (layer-toggle sym))
   bspc (tap-hold-release 200 200 bspc (layer-toggle num))
   ret (tap-hold-release 200 200 ret (layer-toggle sym))
+  spc (tap-hold-release 200 200 spc (layer-toggle nav))
+  red M-S-z
+  pst M-v
+	cpy M-c
+  cut M-x
+  und M-z
 )
 
 (deflayer base
   q  w  f  p  b       j l u y '
   @a @r @s @t g      m @n @e @i @o
   z x c d v       k h , . /
-  esc spc tab     @ret @bspc del
+  esc @spc tab     @ret @bspc del
 )
 
 (deflayer num
@@ -42,3 +48,9 @@ S-grv S-1 S-2 S-3 S-\ XX XX XX XX XX
 S-9 S-0 S--  XX XX XX
 )
 
+(deflayer nav
+ XX  XX  XX  XX  XX     @red @pst @cpy @cut @und
+ met alt ctl sft XX     caps  left  down  up    right
+ XX  XX  XX  XX  XX    ins home	pgdn	pgup	end
+ XX XX XX               ret bspc del
+)
