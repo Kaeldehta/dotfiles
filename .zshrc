@@ -1,6 +1,5 @@
 # alias
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
-alias lazydot='/opt/homebrew/bin/lazygit --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
 # pnpm
 export PNPM_HOME="/Users/florianstutzky/Library/pnpm"
